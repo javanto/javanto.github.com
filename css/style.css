@@ -218,7 +218,8 @@ div.person#hleinone { clear: both; position: relative; }
 div.person { height: 120px; text-align: center; border: 1px solid #ccc; border-left: none; border-right: none; background-color: rgba(255,255,255,0.6); }
 img.avatar, section.info { display: inline-table; margin-top: 20px; }
 section.info { vertical-align: middle; margin-left: 1em; text-align: left; }
-section.info h1 { padding: 0; margin: 0; }
+section.info h1 { padding: 0; margin: 0.5em 0 0 0; font-family: 'Special Elite', monospace; font-weight: 400; font-size: 2.1em; line-height: 0.5em; }
+section.info dfn { font-family: 'Maven Pro', sans-serif; font-weight: 400; font-size: 1.1em; font-style: normal; }
 ul.services { list-style-type: none; padding: 0; margin: 0.2em 0; }
 ul.services li { display: inline; }
 
