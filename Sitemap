@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://javanto.com/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/projects/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/other/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2012/01/10/moving-to-github-and-jekyll/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2011/01/19/html-css-and-web-design-rant/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2010/10/20/running-sinatra-on-ruby-1-9-2-stack-at-heroku/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2010/07/25/gae-eclipse-maven-update-for-helios/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2010/01/26/how-to-gae-eclipse-maven/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2009/12/25/my-jump-into-the-modern-scms/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2009/08/30/creating-a-simple-maven-plugin/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2009/07/13/eclipse-35-galileo-and-classic-update/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2009/03/22/flex-builder-and-maven-simple-swc-project/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2009/01/22/airfield-application-in-scala/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2009/01/20/eclipse-34-ganymede-and-classic-update/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://javanto.com/blog/2009/01/04/setting-up-magento-community-shipping-module/</loc>
+  <lastmod>2012-01-10T20:48:15+00:00</lastmod>
+</url>
+</urlset>
