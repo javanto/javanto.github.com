@@ -216,6 +216,7 @@ body { background-image: url("../img/logo/logo-240.png"); background-repeat: no-
 div#floater { position: relative; float: left; height: 50%; margin-bottom: -110px; width: 0; }
 div.wrapper { text-align: center; width: 100%; }
 nav { margin-top: 10px; }
+nav.index { margin-top: 0; padding-top: 10px; }
 nav ul li, nav ol li { display: inline-table; }
 nav ul li a, nav ol li a { background-color: #ccc; display: block; width: 14px; height: 14px; -webkit-border-radius: 7px; -khtml-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; background-repeat: no-repeat; background-position: center center; }
 nav ul li a.home { background-image: url("../img/control/home-8.png"); }
@@ -223,7 +224,7 @@ nav ul li a.blog { background-image: url("../img/control/blog-8.png"); }
 nav ul li a.projects { background-image: url("../img/control/projects-8.png"); }
 nav ul li a.other { background-image: url("../img/control/other-8.png"); }
 nav ul li a.selected, nav ol li a.selected { background-color: #000; }
-div.content { border: 1px solid #ccc; background-color: rgba(255,255,255,0.8); clear: both; position: relative; max-width: 414px; text-align: left; margin: 0 10px; }
+div.content { border: 1px solid #ccc; background-color: rgba(255,255,255,0.8); clear: both; position: relative; max-width: 414px; text-align: left; margin: 0 10px 10px 10px; }
 div.content.person { text-align: center; }
 div.content > section { margin: 20px 5px; }
 h1 > a, h1 > a:visited, h1 > a:hover, h1 > a:focus, h1 > a:active, h2 > a, h2 > a:visited, h2 > a:hover, h2 > a:focus, h2 > a:active { text-decoration: inherit; color: inherit; }
@@ -290,9 +291,10 @@ ul.projects { list-style-type: none; padding: 0; }
   /* Style adjustments for viewports 480px and over go here */
   body { background-image: url("../img/logo/logo-360.png"); font-size: 105%; }
   div.content.person { font-size: 100%; }
-  div.content { font-size: 80%; max-width: 653px; margin: 0 20px; }
+  div.content { font-size: 80%; max-width: 653px; margin: 0 20px 20px 20px; }
   div#floater { margin-bottom: -115px; }
   nav { margin-top: 15px; }
+  nav.index { padding-top: 15px; }
   nav ul li a, nav ol li a { width: 28px; height: 28px; -webkit-border-radius: 14px; -khtml-border-radius: 14px; -moz-border-radius: 14px; border-radius: 14px; }
   nav ul li a.home { background-image: url("../img/control/home-16.png"); }
   nav ul li a.blog { background-image: url("../img/control/blog-16.png"); }
@@ -307,16 +309,17 @@ ul.projects { list-style-type: none; padding: 0; }
 }
 
 @media only screen and (min-width: 728px) {
-  div.content { margin: 0 auto; }
+  div.content { margin: 0 auto 30px auto; }
 }
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
   body { background-image: url("../img/logo/logo-480.png"); font-size: 140%; }
   div.content.person { font-size: 100%; }
-  div.content { font-size: 60%; max-width: 820px; margin: 0 40px; }
+  div.content { font-size: 60%; max-width: 820px; margin: 0 40px 40px 40px; }
   div#floater { margin-bottom: -165px; }
   nav { margin-top: 25px; }
+  nav.index { padding-top: 25px; }
   nav ul li a, nav ol li a { width: 56px; height: 56px; -webkit-border-radius: 28px; -khtml-border-radius: 28px; -moz-border-radius: 28px; border-radius: 28px; }
   nav ul li a.home { background-image: url("../img/control/home-32.png"); }
   nav ul li a.blog { background-image: url("../img/control/blog-32.png"); }
@@ -329,7 +332,7 @@ ul.projects { list-style-type: none; padding: 0; }
 }
 
 @media only screen and (min-width: 900px) {
-  div.content { margin: 0 auto; }
+  div.content { margin: 0 auto 40px auto; }
 }
 
 

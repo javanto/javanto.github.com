@@ -24,7 +24,7 @@
 	</head>
 	<body style="display: none;">
 		<div class="wrapper">
-			<nav>
+			<nav{% if page.url == '/index.html' %} class="index"{% endif %}>
 				<ul>
 					<li><a href="/" class="home{% if page.url == '/index.html' %} selected{% endif %}"></a></li>
 					<li><a href="/blog" class="blog{% if page.url == '/blog/index.html' or page.id %} selected{% endif %}"></a></li>
