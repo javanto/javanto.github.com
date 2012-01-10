@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+		<div class="wrapper">
+			<h1><a href="/blog">Javanto Blog</a></h1>
+
+			<div class="content post">
+				<section class="post">
+					<h2>{{ page.title }}</h2>
+
+					{% assign author = site.authors[page.author] %}
+					<section class="person">
+						<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=30" alt="Avatar" class="avatar" width="30" height="30" />
+						<section class="info">
+							<div class="author">{{ author.display_name }}</div>
+							<div class="date">{{ page.date | date_to_long_string }}</div>
+							<ul class="tags">
+								{% for tag in page.tags %}
+								<li class="tag">{{ tag }}</li>
+								{% endfor %}
+							</ul>
+						</section>
+					</section>
+
+					{{ content }}
+
+					<div id="disqus_thread"></div>
+					<script type="text/javascript">
+						/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+						var disqus_shortname = 'javanto-blog'; // required: replace example with your forum shortname
+
+						/* * * DON'T EDIT BELOW THIS LINE * * */
+						(function() {
+							var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+							dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+							(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+						})();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+				</section>
+			</div>
+		</div>

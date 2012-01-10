@@ -1,0 +1,48 @@
+---
+layout: default
+title: Other
+description: Random crap.
+author: hleinone
+---
+
+		<div class="wrapper">
+			<h1><a href="/other">{{ page.title }}</a></h1>
+
+			<div class="content other">
+				<section class="other">
+					<h2>Setting up the Javanto Maven repository</h2>
+						<h3>For dependencies</h3>
+{% highlight xml %}
+<repositories>
+	...
+	<repository>
+		<id>javanto-releases</id>
+		<url>https://raw.github.com/javanto/repository/releases</url>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+	</repository>
+</repositories>
+{% endhighlight %}
+						<h3>For plugins</h3>
+{% highlight xml %}
+<pluginRepositories>
+	...
+	<pluginRepository>
+		<id>javanto-releases</id>
+		<url>https://raw.github.com/javanto/repository/releases</url>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+	</pluginRepository>
+</pluginRepositories>
+{% endhighlight %}
+				</section>
+			</div>
+		</div>

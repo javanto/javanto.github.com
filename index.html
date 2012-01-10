@@ -1,59 +1,33 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>	<html class="no-js ie6 oldie" lang="en" xml:lang="en" version="HTML+RDFa 1.1" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
-<!--[if IE 7]>		<html class="no-js ie7 oldie" lang="en" xml:lang="en" version="HTML+RDFa 1.1" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
-<!--[if IE 8]>		<html class="no-js ie8 oldie" lang="en" xml:lang="en" version="HTML+RDFa 1.1" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
-<!--[if gt IE 8]><!-->	<html class="no-js" lang="en" xml:lang="en" version="HTML+RDFa 1.1" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
-	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<meta property="og:title" content="Independent Software Developer" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://javanto.com/" />
-		<meta property="og:image" content="http://javanto.com/img/logo.png" />
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:site_name" content="Javanto" />
-		<meta property="og:description" content="Hannu Leinonen, Independent Software Developer" />
-		<meta property="fb:admins" content="713421374" />
-		<title>Javanto</title>
-		<script type="text/javascript" src="js/modernizr-2.0.6.min.js"></script>
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
-		<link href="http://fonts.googleapis.com/css?family=Special+Elite|Maven+Pro" rel="stylesheet" type="text/css" />
-	</head>
-	<body>
-		<div id="floater"></div>
-		<div class="content person" id="hleinone">
-			<a href="http://en.gravatar.com/hleinone"><img src="http://www.gravatar.com/avatar/4ecca0c7c3d725a2f73c77de52ff2c78.png" alt="My avatar" class="avatar" /></a>
-			<section class="info">
-				<h1>Hannu Leinonen</h1>
-				<dfn>Independent Software Developer</dfn>
-				<ul class="services">
-					<li><a href="http://fi.linkedin.com/in/hleinone" class="service"><img src="img/service/linkedin.png" alt="LinkedIn" /></a></li>
-					<li><a href="https://profiles.google.com/u/0/hleinone/" class="service"><img src="img/service/google-plus.png" alt="Google+" /></a></li>
-					<li><a href="http://twitter.com/#!/hleinone" class="service"><img src="img/service/twitter.png" alt="Twitter" /></a></li>
-					<li><a href="http://identi.ca/hleinone" class="service"><img src="img/service/identica.png" alt="Identi.ca" /></a></li>
-					<li><a href="http://about.me/hleinone" class="service"><img src="img/service/aboutme.png" alt="About.me" /></a></li>
-					<li><a href="http://careers.stackoverflow.com/hleinone" class="service"><img src="img/service/stack-overflow-careers.png" alt="Stack Overflow Careers" /></a></li>
-					<li><a href="http://stackoverflow.com/users/83047/hleinone" class="service"><img src="img/service/stack-overflow.png" alt="Stack Overflow" /></a></li>
-					<li><a href="https://github.com/hleinone" class="service"><img src="img/service/github.png" alt="GitHub" /></a></li>
-					<li><a href="http://code.google.com/u/hleinone/" class="service"><img src="img/service/google-code.png" alt="Google Code" /></a></li>
-					<li><a href="http://bitbucket.org/hleinone/" class="service"><img src="img/service/bitbucket.png" alt="Bitbucket" /></a></li>
-				</ul>
-			</section>
-		</div>
-	</body>
-<!--[if lt IE 7 ]>
-	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-<![endif]-->
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-16108207-1']);
-		_gaq.push(['_trackPageview']);
+---
+layout: default
+title: Javanto
+description: Independent Software Developer
+author: hleinone
+---
 
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
-</html>
+		<div id="floater"></div>
+		<div class="wrapper">
+			<div class="content person">
+				<section class="person">
+					{% assign author = site.authors[page.author] %}
+					<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=80" alt="Avatar" class="avatar" width="80" height="80" />
+					<section class="info">
+						<h1>{{ author.display_name }}</h1>
+						<dfn>Independent Software Developer</dfn>
+						<ul class="services">
+							<li><a href="http://fi.linkedin.com/in/{{ author.linkedin }}" class="service"><img src="img/service/linkedin.png" alt="LinkedIn" /></a></li>
+							<li><a href="https://profiles.google.com/u/0/{{ author.google_plus }}/" class="service"><img src="img/service/google-plus.png" alt="Google+" /></a></li>
+							<li><a href="http://twitter.com/#!/{{ author.twitter }}" class="service"><img src="img/service/twitter.png" alt="Twitter" /></a></li>
+							<li><a href="http://identi.ca/{{ author.identica }}" class="service"><img src="img/service/identica.png" alt="Identi.ca" /></a></li>
+							<li><a href="http://about.me/{{ author.aboutme }}" class="service"><img src="img/service/aboutme.png" alt="About.me" /></a></li>
+							<li><a href="http://careers.stackoverflow.com/{{ author.stackoverflow_careers }}" class="service"><img src="img/service/stack-overflow-careers.png" alt="Stack Overflow Careers" /></a></li>
+							<li><a href="http://stackoverflow.com/users/{{ author.stackoverflow.id }}/{{ author.stackoverflow.name }}" class="service"><img src="img/service/stack-overflow.png" alt="Stack Overflow" /></a></li>
+							<li><a href="https://github.com/{{ author.github }}" class="service"><img src="img/service/github.png" alt="GitHub" /></a></li>
+							<li><a href="http://code.google.com/u/{{ author.google_code }}/" class="service"><img src="img/service/google-code.png" alt="Google Code" /></a></li>
+							<li><a href="http://bitbucket.org/{{ author.bitbucket }}/" class="service"><img src="img/service/bitbucket.png" alt="Bitbucket" /></a></li>
+						</ul>
+					</section>
+				</section>
+			</div>
+		</div>
+

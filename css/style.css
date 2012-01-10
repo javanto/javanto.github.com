@@ -208,21 +208,46 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: Hannu Leinonen
+   Author: Javanto
    ========================================================================== */
 
-html, body { height: 100%; }
-body { background: url("../img/logo.png") no-repeat center; }
-div#floater { position: relative; float: left; height: 50%; margin-bottom: -60px; width: 0; }
-div.person#hleinone { clear: both; position: relative; }
-div.person { height: 120px; text-align: center; border: 1px solid #ccc; border-left: none; border-right: none; background-color: rgba(255,255,255,0.6); }
-img.avatar, section.info { display: inline-table; margin-top: 20px; }
-section.info { vertical-align: middle; margin-left: 1em; text-align: left; }
-section.info h1 { padding: 0; margin: 0.5em 0 0 0; font-family: 'Special Elite', monospace; font-weight: 400; font-size: 2.1em; line-height: 0.5em; }
-section.info dfn { font-family: 'Maven Pro', sans-serif; font-weight: 400; font-size: 1.1em; font-style: normal; }
+html, body { height: 100%; min-width: 240px; }
+body { background-image: url("../img/logo/logo-240.png"); background-repeat: no-repeat; background-position: center center; }
+div#floater { position: relative; float: left; height: 50%; margin-bottom: -110px; width: 0; }
+div.wrapper { text-align: center; width: 100%; }
+nav { margin-top: 10px; }
+nav ul li, nav ol li { display: inline-table; }
+nav ul li a, nav ol li a { background-color: #ccc; display: block; width: 14px; height: 14px; -webkit-border-radius: 7px; -khtml-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; background-repeat: no-repeat; background-position: center center; }
+nav ul li a.home { background-image: url("../img/control/home-8.png"); }
+nav ul li a.blog { background-image: url("../img/control/blog-8.png"); }
+nav ul li a.projects { background-image: url("../img/control/projects-8.png"); }
+nav ul li a.other { background-image: url("../img/control/other-8.png"); }
+nav ul li a.selected, nav ol li a.selected { background-color: #000; }
+div.content { border: 1px solid #ccc; background-color: rgba(255,255,255,0.8); clear: both; position: relative; max-width: 414px; text-align: left; margin: 0 10px; }
+div.content.person { text-align: center; }
+div.content > section { margin: 20px 5px; }
+h1 > a, h1 > a:visited, h1 > a:hover, h1 > a:focus, h1 > a:active, h2 > a, h2 > a:visited, h2 > a:hover, h2 > a:focus, h2 > a:active { text-decoration: inherit; color: inherit; }
+h1 { font-size: 1.6em; }
+h1, .author { font-family: 'Special Elite', monospace; font-weight: 400; color: #000; }
+h2 { font-family: 'Patua One', serif; font-weight: 400; font-size: 1.4em; font-style: normal; color: #000; }
+h2 > a, h2 > a:visited, h2 > a:hover, h2 > a:focus, h2 > a:active { color: #087dbf; }
+div.person > section.person { height: 140px; text-align: center; }
+section.info { margin: 0 auto; text-align: center; }
+section.info h1 { padding: 0; line-height: 0.5em; margin: 0.5em 0 0 0; }
+section.info dfn { font-family: 'Maven Pro', sans-serif; font-weight: 400; font-size: 0.9em; font-style: normal; }
 ul.services { list-style-type: none; padding: 0; margin: 0.2em 0; }
 ul.services li { display: inline; }
-
+ul.posts { list-style-type: none; padding: 0; }
+.date { color: #aaa; font-size: 0.7em; }
+.tags { margin: 0 0 0 -0.6em; padding: 0; list-style: none; }
+.tags li { font-size: 0.7em; float: left; height: 1.6em; line-height: 1.6em; position:relative; margin-left: 1.5em; padding: 0 0.6em 0 0.8em; background: #f6f48b; margin-top: 0.2em; }
+.tags li:before { content: ""; position: absolute; top: 0em; left: -0.75em; width: 0; height: 0; border-color: transparent #f6f48b transparent transparent; border-color: rgba(255,255,255,0) #f6f48b rgba(255,255,255,0) rgba(255,255,255,0); border-style: solid; border-width: 0.825em 0.8em 0.825em 0; }
+.tags li:after{  content: ""; position: absolute; top: 0.55em; left: -0.1em; width: 0.3em; height: 0.3em; -webkit-border-radius: 0.15em; -khtml-border-radius: 0.15em; -moz-border-radius: 0.15em; border-radius: 0.15em; background: #fff; border: 1px solid #ccc; }
+div.content.post, div.content.blog { text-align: left; }
+.post > .person > section.info { text-align: left; vertical-align: middle; line-height: 0.8em; margin-top: 0.4em; width: 70%; }
+.post > .person > section.info > .author { font-size: 1.2em; }
+.post > .person > img.avatar, .post > .person > section.info { display: inline-table; }
+ul.projects { list-style-type: none; padding: 0; }
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
@@ -257,16 +282,55 @@ ul.services li { display: inline; }
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (min-width: 450px) {
+  div.content { margin: 0 auto; }
+}
+
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
+  body { background-image: url("../img/logo/logo-360.png"); font-size: 105%; }
+  div.content.person { font-size: 100%; }
+  div.content { font-size: 80%; max-width: 653px; margin: 0 20px; }
+  div#floater { margin-bottom: -115px; }
+  nav { margin-top: 15px; }
+  nav ul li a, nav ol li a { width: 28px; height: 28px; -webkit-border-radius: 14px; -khtml-border-radius: 14px; -moz-border-radius: 14px; border-radius: 14px; }
+  nav ul li a.home { background-image: url("../img/control/home-16.png"); }
+  nav ul li a.blog { background-image: url("../img/control/blog-16.png"); }
+  nav ul li a.projects { background-image: url("../img/control/projects-16.png"); }
+  nav ul li a.other { background-image: url("../img/control/other-16.png"); }
+  div.content > section { margin: 30px 10px; }
+  div.person > section.person { height: 100px; text-align: center; }
+  img.avatar, section.info { display: inline-table; }
+  section.info { vertical-align: middle; margin: 0 0 0 0.5em; text-align: left; }
+  h2 { font-size: 1.6em; }
+  .post > .person > section.info { font-size: 110%; }
+}
 
+@media only screen and (min-width: 728px) {
+  div.content { margin: 0 auto; }
 }
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
-
+  body { background-image: url("../img/logo/logo-480.png"); font-size: 140%; }
+  div.content.person { font-size: 100%; }
+  div.content { font-size: 60%; max-width: 820px; margin: 0 40px; }
+  div#floater { margin-bottom: -165px; }
+  nav { margin-top: 25px; }
+  nav ul li a, nav ol li a { width: 56px; height: 56px; -webkit-border-radius: 28px; -khtml-border-radius: 28px; -moz-border-radius: 28px; border-radius: 28px; }
+  nav ul li a.home { background-image: url("../img/control/home-32.png"); }
+  nav ul li a.blog { background-image: url("../img/control/blog-32.png"); }
+  nav ul li a.projects { background-image: url("../img/control/projects-32.png"); }
+  nav ul li a.other { background-image: url("../img/control/other-32.png"); }
+  div.content > section { margin: 40px 20px; }
+  div.person > section.person { height: 120px; }
+  h2 { font-size: 2em; }
+  .post > .person > section.info { font-size: 140%; }
 }
 
+@media only screen and (min-width: 900px) {
+  div.content { margin: 0 auto; }
+}
 
 
 /* ==|== print styles =======================================================
