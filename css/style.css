@@ -303,7 +303,7 @@ ul.projects { list-style-type: none; padding: 0; }
   nav ul li a.other { background-image: url("../img/control/other-16.png"); }
   div.content > section, div.content > article { margin: 30px 10px; }
   div.person > section.person { height: 100px; text-align: center; }
-  img.avatar, section.info { display: inline-table; }
+  div.avatar, section.info { display: inline-table; }
   section.info { vertical-align: middle; margin: 0 0 0 0.5em; text-align: left; }
   h2 { font-size: 1.6em; }
   article > header > .person > section.info { font-size: 110%; }

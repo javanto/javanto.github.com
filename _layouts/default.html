@@ -79,8 +79,8 @@
 						debug.debug("mobile");
 					}
 					// responsive avatar size
-					$(".person > .person > img.avatar").attr("height", avatarSize).attr("width", avatarSize).attr("src", "http://www.gravatar.com/avatar/{{ author.gravatar }}?s=" + avatarSize);
-					$("article > header > .person > img.avatar").attr("height", postAvatarSize).attr("width", postAvatarSize).attr("src", "http://www.gravatar.com/avatar/{{ author.gravatar }}?s=" + postAvatarSize);
+					$(".person > .person > div.avatar > img.avatar").attr("height", avatarSize).attr("width", avatarSize).attr("src", "http://www.gravatar.com/avatar/{{ author.gravatar }}?s=" + avatarSize);
+					$("article > header > .person > div.avatar > img.avatar").attr("height", postAvatarSize).attr("width", postAvatarSize).attr("src", "http://www.gravatar.com/avatar/{{ author.gravatar }}?s=" + postAvatarSize);
 
 					$("body").show();
 				}).resize();

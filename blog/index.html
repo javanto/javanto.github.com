@@ -16,7 +16,9 @@ author: hleinone
 
 						{% assign author = site.authors[post.author] %}
 						<section class="person">
-							<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=30" alt="Avatar" class="avatar" width="30" height="30" />
+							<div class="avatar">
+								<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=30" alt="Avatar" class="avatar" width="30" height="30" />
+							</div>
 							<section class="info">
 								<div class="author">{{ author.display_name }}</div>
 								<div class="date">{{ post.date | date_to_long_string }}</div>
