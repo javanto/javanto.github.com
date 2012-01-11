@@ -6,38 +6,42 @@ layout: default
 			<h1><a href="/blog">Blog</a></h1>
 
 			<div class="content post">
-				<section class="post">
-					<h2>{{ page.title }}</h2>
+				<article class="post">
+					<header>
+						<h2>{{ page.title }}</h2>
 
-					{% assign author = site.authors[page.author] %}
-					<section class="person">
-						<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=30" alt="Avatar" class="avatar" width="30" height="30" />
-						<section class="info">
-							<div class="author">{{ author.display_name }}</div>
-							<div class="date">{{ page.date | date_to_long_string }}</div>
-							<ul class="tags">
-								{% for tag in page.tags %}
-								<li class="tag">{{ tag }}</li>
-								{% endfor %}
-							</ul>
+						{% assign author = site.authors[page.author] %}
+						<section class="person">
+							<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=30" alt="Avatar" class="avatar" width="30" height="30" />
+							<section class="info">
+								<div class="author">{{ author.display_name }}</div>
+								<div class="date">{{ page.date | date_to_long_string }}</div>
+								<ul class="tags">
+									{% for tag in page.tags %}
+									<li class="tag">{{ tag }}</li>
+									{% endfor %}
+								</ul>
+							</section>
 						</section>
-					</section>
 
-					<!-- Twitter -->
-					<a href="https://twitter.com/share" class="twitter-share-button" data-via="hleinone">Tweet</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-					<!-- Google+ -->
-					<g:plusone size="medium"></g:plusone>
-					<script type="text/javascript">
-					  (function() {
-						var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-						po.src = 'https://apis.google.com/js/plusone.js';
-						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-					  })();
-					</script>
+						<!-- Twitter -->
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="hleinone">Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						<!-- Google+ -->
+						<g:plusone size="medium"></g:plusone>
+						<script type="text/javascript">
+						  (function() {
+							var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+							po.src = 'https://apis.google.com/js/plusone.js';
+							var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+						  })();
+						</script>
+					</header>
 
 					{{ content }}
+				</article>
 
+				<section class="discussion">
 					<div id="disqus_thread"></div>
 					<script type="text/javascript">
 						/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

@@ -226,7 +226,7 @@ nav ul li a.other { background-image: url("../img/control/other-8.png"); }
 nav ul li a.selected, nav ol li a.selected { background-color: #000; }
 div.content { border: 1px solid #ccc; background-color: rgba(255,255,255,0.8); clear: both; position: relative; max-width: 414px; text-align: left; margin: 0 10px 10px 10px; }
 div.content.person { text-align: center; }
-div.content > section { margin: 20px 5px; }
+div.content > section, div.content > article { margin: 20px 5px; }
 h1 > a, h1 > a:visited, h1 > a:hover, h1 > a:focus, h1 > a:active, h2 > a, h2 > a:visited, h2 > a:hover, h2 > a:focus, h2 > a:active { text-decoration: inherit; color: inherit; }
 h1 { font-size: 1.6em; }
 h1, .author { font-family: 'Special Elite', monospace; font-weight: 400; color: #000; }
@@ -245,10 +245,10 @@ ul.posts { list-style-type: none; padding: 0; }
 .tags li:before { content: ""; position: absolute; top: 0em; left: -0.75em; width: 0; height: 0; border-color: transparent #f6f48b transparent transparent; border-color: rgba(255,255,255,0) #f6f48b rgba(255,255,255,0) rgba(255,255,255,0); border-style: solid; border-width: 0.825em 0.8em 0.825em 0; }
 .tags li:after{  content: ""; position: absolute; top: 0.55em; left: -0.1em; width: 0.3em; height: 0.3em; -webkit-border-radius: 0.15em; -khtml-border-radius: 0.15em; -moz-border-radius: 0.15em; border-radius: 0.15em; background: #fff; border: 1px solid #ccc; }
 div.content.post, div.content.blog { text-align: left; }
-.post > .person { margin-bottom: 0.4em; }
-.post > .person > section.info { text-align: left; vertical-align: middle; line-height: 0.8em; margin-top: 0.4em; width: 70%; }
-.post > .person > section.info > .author { font-size: 1.2em; }
-.post > .person > img.avatar, .post > .person > section.info { display: inline-table; }
+article > header > .person { margin-bottom: 0.4em; }
+article > header > .person > section.info { text-align: left; vertical-align: middle; line-height: 0.8em; margin-top: 0.4em; width: 70%; }
+article > header > .person > section.info > .author { font-size: 1.2em; }
+article > header > .person > img.avatar, article > header > .person > section.info { display: inline-table; }
 ul.projects { list-style-type: none; padding: 0; }
 
 /* ==|== non-semantic helper classes ========================================
@@ -301,12 +301,12 @@ ul.projects { list-style-type: none; padding: 0; }
   nav ul li a.blog { background-image: url("../img/control/blog-16.png"); }
   nav ul li a.projects { background-image: url("../img/control/projects-16.png"); }
   nav ul li a.other { background-image: url("../img/control/other-16.png"); }
-  div.content > section { margin: 30px 10px; }
+  div.content > section, div.content > article { margin: 30px 10px; }
   div.person > section.person { height: 100px; text-align: center; }
   img.avatar, section.info { display: inline-table; }
   section.info { vertical-align: middle; margin: 0 0 0 0.5em; text-align: left; }
   h2 { font-size: 1.6em; }
-  .post > .person > section.info { font-size: 110%; }
+  article > header > .person > section.info { font-size: 110%; }
 }
 
 @media only screen and (min-width: 728px) {
@@ -326,10 +326,10 @@ ul.projects { list-style-type: none; padding: 0; }
   nav ul li a.blog { background-image: url("../img/control/blog-32.png"); }
   nav ul li a.projects { background-image: url("../img/control/projects-32.png"); }
   nav ul li a.other { background-image: url("../img/control/other-32.png"); }
-  div.content > section { margin: 40px 20px; }
+  div.content > section, div.content > article { margin: 40px 20px; }
   div.person > section.person { height: 120px; }
   h2 { font-size: 2em; }
-  .post > .person > section.info { font-size: 140%; }
+  article > header > .person > section.info { font-size: 140%; }
 }
 
 @media only screen and (min-width: 900px) {

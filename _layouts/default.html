@@ -80,7 +80,7 @@
 					}
 					<!-- responsive avatar size -->
 					$(".person > .person > img.avatar").attr("height", avatarSize).attr("width", avatarSize).attr("src", "http://www.gravatar.com/avatar/{{ author.gravatar }}?s=" + avatarSize);
-					$(".post > .person > img.avatar").attr("height", postAvatarSize).attr("width", postAvatarSize).attr("src", "http://www.gravatar.com/avatar/{{ author.gravatar }}?s=" + postAvatarSize);
+					$("article > header > .person > img.avatar").attr("height", postAvatarSize).attr("width", postAvatarSize).attr("src", "http://www.gravatar.com/avatar/{{ author.gravatar }}?s=" + postAvatarSize);
 
 					$("body").show();
 				}).resize();
