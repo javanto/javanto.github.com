@@ -250,6 +250,7 @@ article > header > .person > section.info { text-align: left; vertical-align: mi
 article > header > .person > section.info > .author { font-size: 1.2em; }
 article > header > .person > img.avatar, article > header > .person > section.info { display: inline-table; }
 ul.projects { list-style-type: none; padding: 0; }
+section.social { height: 20px; }
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
