@@ -250,7 +250,7 @@ article > header > .person > section.info { text-align: left; vertical-align: mi
 article > header > .person > section.info > .author { font-size: 1.2em; }
 article > header > .person > img.avatar, article > header > .person > section.info { display: inline-table; }
 ul.projects { list-style-type: none; padding: 0; }
-section.social { height: 20px; }
+section.social > iframe, section.social > div { display: block; margin: 2px 0; }
 
 /* ==|== media queries ======================================================
    PLACEHOLDER Media Queries for Responsive Design.
@@ -281,6 +281,7 @@ section.social { height: 20px; }
   section.info { margin: 0 0 0 0.5em; text-align: left; }
   h2 { font-size: 1.6em; }
   article > header > .person > section.info { font-size: 110%; }
+  section.social > iframe, section.social > div { display: inline-block; margin: 0; }
 }
 
 @media only screen and (min-width: 728px) {
