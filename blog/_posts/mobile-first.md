@@ -16,4 +16,4 @@ published: false
 author: hleinone
 ---
 
-The story how this site was built. [HTML 5 Boilerplate](http://html5boilerplate.com/)
+Yet noticed that this site works on both Android and iOS devices? How was this all achieved? [HTML 5 Boilerplate](http://html5boilerplate.com/)

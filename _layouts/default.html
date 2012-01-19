@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>	<html class="no-js ie6 oldie" lang="en" xml:lang="en" version="HTML+RDFa 1.1" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
-<!--[if IE 7]>		<html class="no-js ie7 oldie" lang="en" xml:lang="en" version="HTML+RDFa 1.1" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
-<!--[if IE 8]>		<html class="no-js ie8 oldie" lang="en" xml:lang="en" version="HTML+RDFa 1.1" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
-<!--[if gt IE 8]><!-->	<html class="no-js" lang="en" xml:lang="en" version="HTML+RDFa 1.1" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<html class="no-js" lang="en" xml:lang="en" version="HTML+RDFa 1.1" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<title>{% if page.url != '/index.html' %}{{ page.title }} - {% endif %}Javanto</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="description" content="{{ page.description }}">
 		<meta name="author" content="Javanto" />
-		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="apple-touch-fullscreen" content="YES" />
+		<meta name="apple-mobile-web-app-capable" content="YES" />
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
+		<!-- For iPhone 4 with high-resolution Retina display: -->
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+		<!-- For first-generation iPad: -->
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+		<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+		<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+		<!-- For nokia devices: -->
+		<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+
+		<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+		<meta http-equiv="cleartype" content="on">
+
 		<meta property="og:title" content="{{ page.title }}" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://javanto.com{{ page.url }}" />
@@ -17,11 +33,20 @@
 		<meta property="og:site_name" content="Javanto" />
 		<meta property="og:description" content="{{ page.description }}" />
 		<meta property="fb:admins" content="713421374" />
-		<script type="text/javascript" src="/js/modernizr-2.0.6.min.js"></script>
+
+		<title>{% if page.url != '/index.html' %}{{ page.title }} - {% endif %}Javanto</title>
+
 		<link href="/css/style.css" rel="stylesheet" type="text/css" />
 		<link href="http://fonts.googleapis.com/css?family=Special+Elite|Maven+Pro|Patua+One" rel="stylesheet" type="text/css" />
 		<link href="/css/syntax.css" rel="stylesheet" type="text/css" />
-		{% if page.url == '/blog/index.html' or page.id %}<link href="http://feeds.feedburner.com/javanto" rel="alternate" title="Javaanto Blog" type="application/atom+xml" />{% endif %}
+		{% if page.url == '/blog/index.html' or page.id %}
+		<link href="http://feeds.feedburner.com/javanto" rel="alternate" title="Javaanto Blog" type="application/atom+xml" />
+		{% endif %}
+		<script type="text/javascript" src="/js/modernizr-2.0.6.min.js"></script>
+		<script>Modernizr.mq("(min-width:0)") || document.write("<script src=\"/js/respond-1.0.1.min.js\">\x3C/script>")</script>
+		<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="/js/selectivizr-1.0.2.min.js"></script>
+		<![endif]-->
 	</head>
 	<body style="display: none;">
 		<div class="wrapper">
@@ -41,16 +66,12 @@
 		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
 		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 <![endif]-->
+		<!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
 		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-16108207-1']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
+			var _gaq=[["_setAccount","UA-16108207-1"],["_trackPageview"]];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+			g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+			s.parentNode.insertBefore(g,s)}(document,"script"));
 		</script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript">window.jQuery || document.write("<script type=\"text/javascript\" src=\"/js/jquery-1.7.1.min.js\"><\/script>")</script>
@@ -58,6 +79,10 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				if (Modernizr.touch) {
+					// iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
+					MBP.scaleFix();
+					// hide the URL bar at the top of mobile Safari on your iOS
+					MBP.hideUrlBar();
 					debug.debug("touch");
 					// bind to touchstart, touchmove, etc and watch `event.streamId`
 				} else {
