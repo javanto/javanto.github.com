@@ -11,7 +11,7 @@ author: hleinone
 				<section class="person">
 					{% assign author = site.authors[page.author] %}
 					<div class="avatar">
-						<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=80" alt="Avatar" class="avatar" width="80" height="80" />
+						<img url="http://www.gravatar.com/avatar/{{ author.gravatar }}?s={240=80,480=95,768=120}" alt="Avatar" class="avatar" />
 					</div>
 					<section class="info">
 						<h1>{{ author.display_name }}</h1>

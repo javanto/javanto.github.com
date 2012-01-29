@@ -58,13 +58,6 @@
 {% assign author = site.authors[page.author] %}
 {{ content }}
 
-<!--[if (gte IE 7)&(lte IE 8)]>
-		<script type="text/javascript" src="/js/selectivizr-1.0.2.min.js"></script>
-<![endif]-->
-<!--[if lt IE 7 ]>
-		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-<![endif]-->
 		<!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
 		<script type="text/javascript">
 			var _gaq=[["_setAccount","UA-16108207-1"],["_trackPageview"]];
@@ -73,79 +66,56 @@
 			s.parentNode.insertBefore(g,s)}(document,"script"));
 		</script>
 		<script type="text/javascript">
-			function test_jQuery() { jQuery(""); }
-			  
-			var successfully_loaded = false;
-			function loadOrFallback(scripts,idx) {
-				function testAndFallback() {
-					clearTimeout(fallback_timeout);
-					if (successfully_loaded) return; // already loaded successfully, so just bail
-					try {
-						scripts[idx].test();
-						successfully_loaded = true; // won't execute if the previous "test" fails
-						scripts[idx].success();
-					} catch(err) {
-						if (idx < scripts.length-1) loadOrFallback(scripts,idx+1);
-					}
-				}
-
-				if (idx == null) idx = 0;
-				$LAB.script(scripts[idx].src).wait(testAndFallback);
-				var fallback_timeout = setTimeout(testAndFallback,10*1000); // only wait 10 seconds
-			}
-		</script>
-		<script type="text/javascript">
 			Modernizr.load([
+				"/js/ba-debug-0.4.min.js",
+				"/js/helper.js",
 				{
 					test: Modernizr.mq("(min-width:0)"),
 					nope: "/js/respond-1.0.1.min.js"
 				},
-				"/js/ba-debug-0.4.min.js",
-				"/js/helper.js",
 				{
-					load: "//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
+					load: "/js/molt-2.2.0.W.min.js",
 					complete: function() {
-						if (!window.jQuery) Modernizr.load("/js/jquery-1.7.1.min.js");
+						molt.discover();
 					}
 				},
 				{
+					load: "/js/ClassIE-0.3.0.min.js",
 					complete: function() {
-						$(document).ready(function() {
-							if (Modernizr.touch) {
-								// iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
-								MBP.scaleFix();
-								// hide the URL bar at the top of mobile Safari on your iOS
-								MBP.hideUrlBar();
-								debug.debug("touch");
-								// bind to touchstart, touchmove, etc and watch `event.streamId`
-							} else {
-								debug.debug("non-touch");
-								$("body").css("background-attachment", "fixed");
-							}
-
-							$(window).resize(function() {
-								var avatarSize = 80;
-								var postAvatarSize = 30;
-								if (Modernizr.mq("only screen and (min-width: 768px)")) {
-									debug.debug("desktop");
-									avatarSize = 120;
-									postAvatarSize = 60;
-								} else if (Modernizr.mq("only screen and (min-width: 480px)")) {
-									debug.debug("tablet");
-									avatarSize = 95;
-									postAvatarSize = 40;
-								} else {
-									debug.debug("mobile");
+						if (IE !== -1) {
+							Modernizr.load([{
+								test: IE >= 7 && IE <= 8,
+								yep: "/js/selectivizr-1.0.2.min.js"
+							},
+							{
+								test: IE < 7,
+								yep: "//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js",
+								complete: function() {
+									window.attachEvent("onload", function() { CFInstall.check({mode: "overlay"}); });
 								}
-								// responsive avatar size
-								$(".person > .person > div.avatar > img.avatar").attr("height", avatarSize).attr("width", avatarSize).attr("src", "http://www.gravatar.com/avatar/{{ author.gravatar }}?s=" + avatarSize);
-								$("article > header > .person > div.avatar > img.avatar").attr("height", postAvatarSize).attr("width", postAvatarSize).attr("src", "http://www.gravatar.com/avatar/{{ author.gravatar }}?s=" + postAvatarSize);
-
-								$("body").show();
-							}).resize();
-						});
+							}]);
+						}
+						Modernizr.load([{
+							test: IE !== -1,
+							yep: "/js/xui-2.3.2.min.js",
+							nope: "/js/xui-ie-2.3.2.min.js",
+							complete: function() {
+								if (Modernizr.touch) {
+									// iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
+									MBP.scaleFix();
+									// hide the URL bar at the top of mobile Safari on your iOS
+									MBP.hideUrlBar();
+									debug.debug("touch");
+									// bind to touchstart, touchmove, etc and watch `event.streamId`
+								} else {
+									debug.debug("non-touch");
+									x$("body").setStyle("background-attachment", "fixed");
+								}
+								x$("body").setStyle("display", "inline");
+							}
+						}]);
 					}
-				}
+				},
 			]);
 		</script>
 	</body>
