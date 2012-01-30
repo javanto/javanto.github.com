@@ -241,9 +241,9 @@ ul.services li { display: inline; }
 ul.posts { list-style-type: none; padding: 0; }
 .date { color: #aaa; font-size: 0.7em; }
 .tags { margin: 0 0 0 -0.6em; padding: 0; list-style: none; }
-.tags li { font-size: 0.7em; float: left; height: 1.6em; line-height: 1.6em; position:relative; margin-left: 1.5em; padding: 0 0.6em 0 0.8em; background: #f6f48b; margin-top: 0.2em; }
+.tags li { font-size: 0.7em; float: left; height: 1.6em; line-height: 1.6em; position: relative; margin-left: 1.5em; padding: 0 0.6em 0 0.8em; background: #f6f48b; margin-top: 0.2em; }
 .tags li:before { content: ""; position: absolute; top: 0em; left: -0.75em; width: 0; height: 0; border-color: transparent #f6f48b transparent transparent; border-color: rgba(255,255,255,0) #f6f48b rgba(255,255,255,0) rgba(255,255,255,0); border-style: solid; border-width: 0.825em 0.8em 0.825em 0; }
-.tags li:after{  content: ""; position: absolute; top: 0.55em; left: -0.1em; width: 0.3em; height: 0.3em; behavior: url("/css/PIE.htc"); -webkit-border-radius: 0.15em; -khtml-border-radius: 0.15em; -moz-border-radius: 0.15em; border-radius: 0.15em; background: #fff; border: 1px solid #ccc; }
+.tags li:after { content: ""; position: absolute; top: 0.55em; left: -0.1em; width: 0.3em; height: 0.3em; behavior: url("/css/PIE.htc"); -webkit-border-radius: 0.15em; -khtml-border-radius: 0.15em; -moz-border-radius: 0.15em; border-radius: 0.15em; background: #fff; border: 1px solid #ccc; }
 div.content.post, div.content.blog { text-align: left; }
 article > header > .person { margin-bottom: 0.4em; }
 article > header > .person > section.info { text-align: left; vertical-align: middle; line-height: 0.8em; margin-top: 0.4em; width: 70%; }
@@ -363,17 +363,25 @@ textarea[contenteditable] {-webkit-appearance: none;}
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
   a, a:visited { text-decoration: underline; }
   div#floater { display: none; }
-  div.person#hleinone { clear: both; position: relative; }
-  div.person { text-align: center; border: none; }
-  img.avatar, section.info { display: inline-table; margin-top: 20px; }
-  section.info { vertical-align: top; margin-left: 1em; text-align: left; }
-  section.info h1 { padding: 0; margin: 0; }
+  nav { margin: 0; display: none; }
+  h1 > a { display: none; }
+  div.content { border: none; margin: 0; max-width: 100%; }
+  div.content.person { text-align: left; }
+  div.person > section.person { text-align: left; }
+  section.info { text-align: left; }
+  section.social { display: none; }
+  .tags { margin: 0; padding: 0; list-style: none; }
+  .tags li { font-size: 0.7em; display: inline; float: none; height: auto; line-height: auto; position: relative; margin: 0; padding: 0; background: auto;  }
+  .tags li:before, .tags li:after { position: relative; left: auto; top: auto; border: none; background: none; height: auto; width: auto; }
+  .tags li:before { display: none; }
+  .tags li:after { display: inline; content: ", "; }
+  .tags li:last-child:after { content: ""; }
   ul.services { list-style-type: none; padding: 0; margin: 0.2em 0; }
   ul.services li { display: block; }
   a[href].service:after { content: " " attr(href); }
   abbr[title]:after { content: " (" attr(title) ")"; }
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  pre, blockquote { border: none; page-break-inside: avoid; }
   thead { display: table-header-group; } /* h5bp.com/t */
   tr, img { page-break-inside: avoid; }
   img { max-width: 100% !important; }
