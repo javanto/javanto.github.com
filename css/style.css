@@ -224,7 +224,7 @@ nav ul li a.blog { background-image: url("../img/control/blog-8.png"); }
 nav ul li a.projects { background-image: url("../img/control/projects-8.png"); }
 nav ul li a.other { background-image: url("../img/control/other-8.png"); }
 nav ul li a.selected, nav ol li a.selected { background-color: #000; }
-div.content { border: 1px solid #ccc; background-color: rgba(255,255,255,0.8); clear: both; position: relative; max-width: 414px; text-align: left; margin: 0 10px 10px 10px; }
+div.content { border: 1px solid #ccc; background: rgb(255, 255, 255); background: rgba(255,255,255,0.8); clear: both; position: relative; max-width: 414px; text-align: left; margin: 0 10px 10px 10px; }
 div.content.person { text-align: center; }
 div.content > section, div.content > article { margin: 20px 5px; }
 h1 > a, h1 > a:visited, h1 > a:hover, h1 > a:focus, h1 > a:active, h2 > a, h2 > a:visited, h2 > a:hover, h2 > a:focus, h2 > a:active { text-decoration: inherit; color: inherit; }

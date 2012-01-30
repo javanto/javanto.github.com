@@ -2,28 +2,28 @@
 <html class="no-js" lang="en" xml:lang="en" version="HTML+RDFa 1.1" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="description" content="{{ page.description }}">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="{{ page.description }}" />
 		<meta name="author" content="Javanto" />
 		<meta name="apple-touch-fullscreen" content="YES" />
 		<meta name="apple-mobile-web-app-capable" content="YES" />
-		<meta name="HandheldFriendly" content="True">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
 		<!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
 		<!-- For iPhone 4 with high-resolution Retina display: -->
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png" />
 		<!-- For first-generation iPad: -->
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png" />
 		<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-		<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png" />
 		<!-- For nokia devices: -->
-		<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+		<link rel="shortcut icon" href="img/l/apple-touch-icon.png" />
 
 		<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
-		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="cleartype" content="on" />
 
 		<meta property="og:title" content="{{ page.title }}" />
 		<meta property="og:type" content="website" />
@@ -69,10 +69,6 @@
 			Modernizr.load([
 				"/js/ba-debug-0.4.min.js",
 				"/js/helper.js",
-				{
-					test: Modernizr.mq("(min-width:0)"),
-					nope: "/js/respond-1.0.1.min.js"
-				},
 				{
 					load: "/js/molt-2.2.0.W.min.js",
 					complete: function() {
