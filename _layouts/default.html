@@ -81,7 +81,7 @@
 						Modernizr.load([{
 							test: IE !== -1 && IE < 7,
 							yep: "//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js",
-							complete: function() {
+							callback: function() {
 								window.attachEvent("onload", function() { CFInstall.check({mode: "overlay"}); });
 							}
 						},
