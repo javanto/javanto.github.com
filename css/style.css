@@ -218,7 +218,7 @@ div.wrapper { text-align: center; width: 100%; }
 nav { margin-top: 10px; }
 nav.index { margin-top: 0; padding-top: 10px; }
 nav ul li, nav ol li { display: inline-table; }
-nav ul li a, nav ol li a { background-color: #ccc; display: block; width: 14px; height: 14px; -webkit-border-radius: 7px; -khtml-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; background-repeat: no-repeat; background-position: center center; }
+nav ul li a, nav ol li a { background-color: #ccc; display: block; width: 14px; height: 14px; behavior: url("/css/PIE.htc"); -webkit-border-radius: 7px; -khtml-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; background-repeat: no-repeat; background-position: center center; }
 nav ul li a.home { background-image: url("../img/control/home-8.png"); }
 nav ul li a.blog { background-image: url("../img/control/blog-8.png"); }
 nav ul li a.projects { background-image: url("../img/control/projects-8.png"); }
@@ -243,7 +243,7 @@ ul.posts { list-style-type: none; padding: 0; }
 .tags { margin: 0 0 0 -0.6em; padding: 0; list-style: none; }
 .tags li { font-size: 0.7em; float: left; height: 1.6em; line-height: 1.6em; position:relative; margin-left: 1.5em; padding: 0 0.6em 0 0.8em; background: #f6f48b; margin-top: 0.2em; }
 .tags li:before { content: ""; position: absolute; top: 0em; left: -0.75em; width: 0; height: 0; border-color: transparent #f6f48b transparent transparent; border-color: rgba(255,255,255,0) #f6f48b rgba(255,255,255,0) rgba(255,255,255,0); border-style: solid; border-width: 0.825em 0.8em 0.825em 0; }
-.tags li:after{  content: ""; position: absolute; top: 0.55em; left: -0.1em; width: 0.3em; height: 0.3em; -webkit-border-radius: 0.15em; -khtml-border-radius: 0.15em; -moz-border-radius: 0.15em; border-radius: 0.15em; background: #fff; border: 1px solid #ccc; }
+.tags li:after{  content: ""; position: absolute; top: 0.55em; left: -0.1em; width: 0.3em; height: 0.3em; behavior: url("/css/PIE.htc"); -webkit-border-radius: 0.15em; -khtml-border-radius: 0.15em; -moz-border-radius: 0.15em; border-radius: 0.15em; background: #fff; border: 1px solid #ccc; }
 div.content.post, div.content.blog { text-align: left; }
 article > header > .person { margin-bottom: 0.4em; }
 article > header > .person > section.info { text-align: left; vertical-align: middle; line-height: 0.8em; margin-top: 0.4em; width: 70%; }
@@ -270,7 +270,7 @@ section.social > iframe, section.social > div { display: block; margin: 2px 0; }
   div#floater { margin-bottom: -115px; }
   nav { margin-top: 15px; }
   nav.index { padding-top: 15px; }
-  nav ul li a, nav ol li a { width: 28px; height: 28px; -webkit-border-radius: 14px; -khtml-border-radius: 14px; -moz-border-radius: 14px; border-radius: 14px; }
+  nav ul li a, nav ol li a { width: 28px; height: 28px; behavior: url("/css/PIE.htc"); -webkit-border-radius: 14px; -khtml-border-radius: 14px; -moz-border-radius: 14px; border-radius: 14px; }
   nav ul li a.home { background-image: url("../img/control/home-16.png"); }
   nav ul li a.blog { background-image: url("../img/control/blog-16.png"); }
   nav ul li a.projects { background-image: url("../img/control/projects-16.png"); }
@@ -296,7 +296,7 @@ section.social > iframe, section.social > div { display: block; margin: 2px 0; }
   div#floater { margin-bottom: -165px; }
   nav { margin-top: 25px; }
   nav.index { padding-top: 25px; }
-  nav ul li a, nav ol li a { width: 56px; height: 56px; -webkit-border-radius: 28px; -khtml-border-radius: 28px; -moz-border-radius: 28px; border-radius: 28px; }
+  nav ul li a, nav ol li a { width: 56px; height: 56px; behavior: url("/css/PIE.htc"); -webkit-border-radius: 28px; -khtml-border-radius: 28px; -moz-border-radius: 28px; border-radius: 28px; }
   nav ul li a.home { background-image: url("../img/control/home-32.png"); }
   nav ul li a.blog { background-image: url("../img/control/blog-32.png"); }
   nav ul li a.projects { background-image: url("../img/control/projects-32.png"); }
