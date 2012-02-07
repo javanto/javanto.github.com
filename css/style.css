@@ -211,7 +211,8 @@ td { vertical-align: top; }
    Author: Javanto
    ========================================================================== */
 
-html, body { height: 100%; min-width: 240px; }
+html, body { min-width: 240px; }
+html.index, html.index > body { height: 100%; }
 body { background-image: url("../img/logo/logo-240.png"); background-repeat: no-repeat; background-position: center center; }
 div#floater { position: relative; float: left; height: 50%; margin-bottom: -110px; width: 0; }
 div.wrapper { text-align: center; width: 100%; }
