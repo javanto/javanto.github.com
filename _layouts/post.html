@@ -13,7 +13,7 @@ layout: default
 						{% assign author = site.authors[page.author] %}
 						<section class="person">
 							<div class="avatar">
-								<img url="http://www.gravatar.com/avatar/{{ author.gravatar }}?s={240=30,480=40,768=60}" alt="Avatar" class="avatar" />
+								<img data-url="http://www.gravatar.com/avatar/{{ author.gravatar }}?s={240:30,480:40,768:60}" alt="Avatar" class="avatar">
 							</div>
 							<section class="info">
 								<div class="author">{{ author.display_name }}</div>
@@ -38,7 +38,7 @@ layout: default
 								var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 							  })();
 							</script>
-							<div style="height: 20px; font-size: 11px; vertical-align: top;"><a href="http://feeds.feedburner.com/javanto" rel="alternate" type="application/rss+xml" style="vertical-align: middle;"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" /></a>&nbsp;<a href="http://feeds.feedburner.com/javanto" rel="alternate" type="application/rss+xml" style="vertical-align: middle;">Subscribe in a reader</a></div>
+							<div style="height: 20px; font-size: 11px; vertical-align: top;"><a href="http://feeds.feedburner.com/javanto" rel="alternate" type="application/rss+xml" style="vertical-align: middle;"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a>&nbsp;<a href="http://feeds.feedburner.com/javanto" rel="alternate" type="application/rss+xml" style="vertical-align: middle;">Subscribe in a reader</a></div>
 						</section>
 					</header>
 
