@@ -18,7 +18,7 @@ published: true
 author: hleinone
 ---
 
-Ever tried out [HTML5 form validation](http://www.w3.org/TR/html5/forms.html#client-side-form-validation)? If not, you should it'll save server-side resources and improve the usability. Also [all the *good* browsers support it](http://caniuse.com/form-validation). For the not-so-nice browsers, there are [polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills) for example [H5F](http://www.thecssninja.com/javascript/H5F).
+Ever tried out [HTML5 form validation](http://www.w3.org/TR/html5/forms.html#client-side-form-validation)? If not, you should! It'll save server-side resources and improve the usability. Also [all the *good* browsers support it](http://caniuse.com/form-validation). For the not-so-nice browsers, there are [polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills) for example [H5F](http://www.thecssninja.com/javascript/H5F).
 
 Done with the testing? If so, you might've noticed some issues with the popping up error messages. They may seem ugly (fixing that is not in the scope of this article) and the text of the error message comes out-of-nowhere. It might be even in incorrect language, depending on the one the browser's in. So, whether you want to unify the messages with their server-side equivalents or just force them to match the language of your site, you're in trouble.
 
