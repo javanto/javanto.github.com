@@ -44,7 +44,7 @@
 		{% endif %}
 		<script type="text/javascript" src="/js/modernizr-2.5.3.min.js"></script>
 	</head>
-	<body style="display: none;">
+	<body>
 		<div class="wrapper">
 			<nav{% if page.url == '/index.html' %} class="index"{% endif %}>
 				<ul>
@@ -97,10 +97,8 @@
 									MBP.hideUrlBar();
 									debug.debug("touch");
 									// bind to touchstart, touchmove, etc and watch `event.streamId`
-									x$("body").setStyle("display", "inline");
 								} else {
 									debug.debug("non-touch");
-									x$("body").setStyle("display", "inline");
 									x$("body").setStyle("background-attachment", "fixed");
 								}
 							}
