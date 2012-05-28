@@ -12,7 +12,7 @@ author: hleinone
 				<article class="post">
 					<header>
 						{% assign post = site.posts[0] %}
-						<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+						<h2><a href="{{ post.url }}/">{{ post.title }}</a></h2>
 
 						{% assign author = site.authors[post.author] %}
 						<section class="person">
@@ -34,7 +34,7 @@ author: hleinone
 					{{ post.content | truncatewords:32 }}
 
 					<p>
-						<a href="{{ post.url }}">Read the full article &raquo;</a>
+						<a href="{{ post.url }}/">Read the full article &raquo;</a>
 					</p>
 				</article>
 				
@@ -43,7 +43,7 @@ author: hleinone
 					<ul class="posts">
 						{% for post in site.posts %}
 						{% unless forloop.first %}
-						<li class="post"><a href="{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date | date_to_string }}</span></li>
+						<li class="post"><a href="{{ post.url }}/">{{ post.title }}</a> <span class="date">{{ post.date | date_to_string }}</span></li>
 						{% endunless %}
 						{% endfor %}
 					</ul>
