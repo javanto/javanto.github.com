@@ -1,6 +1,6 @@
 # Javanto website
 
-Built on [Jekyll](http://github.com/mojombo/jekyll), that transforms it into a static website. Try it out by running `jekyll --server` and then go to [http://localhost:4000/]([http://localhost:4000/).
+Built on [Jekyll](http://github.com/mojombo/jekyll), that transforms it into a static website. Try it out by running `jekyll --server` and then go to [http://localhost:4000/](http://localhost:4000/).
 
 # License
 
