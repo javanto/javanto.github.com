@@ -1,12 +1,9 @@
-# This is the data for my blog
+# Javanto website
 
-It is automatically transformed by [Jekyll](http://github.com/mojombo/jekyll) into a static site whenever I push this repository to GitHub.
+Built on [Jekyll](http://github.com/mojombo/jekyll), that transforms it into a static website. Try it out by running `jekyll --server` and then go to [http://localhost:4000/]([http://localhost:4000/).
 
 # License
 
-The following directories and their contents are Copyright Javanto. You may not reuse anything therein without company's permission:
+The img/logo and blog/_posts directories and their contents are licensed under [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/).
 
-* _posts/
-* img/logo/
-
-All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please.
+Everything else is under [MIT License](http://www.opensource.org/licenses/mit-license.php), so use as you please.
