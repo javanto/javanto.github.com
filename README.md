@@ -4,6 +4,6 @@ Built on [Jekyll](http://github.com/mojombo/jekyll), that transforms it into a s
 
 # License
 
-The img/logo and blog/_posts directories and their contents are licensed under [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/).
+The `img/logo` and `blog/_posts` directories and their contents are copyrighted by Javanto and licensed under [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/).
 
 Everything else is under [MIT License](http://www.opensource.org/licenses/mit-license.php), so use as you please.
