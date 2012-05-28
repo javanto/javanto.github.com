@@ -10,23 +10,23 @@ author: hleinone
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://javanto.com/blog</loc>
+		<loc>http://javanto.com/blog/</loc>
 		<changefreq>hourly</changefreq>
 		<priority>0.9</priority>
 	</url>
 	<url>
-		<loc>http://javanto.com/projects</loc>
+		<loc>http://javanto.com/projects/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://javanto.com/other</loc>
+		<loc>http://javanto.com/other/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	{% for post in site.posts %}
 	<url>
-		<loc>http://javanto.com{{ post.url }}</loc>
+		<loc>http://javanto.com{{ post.url }}/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
