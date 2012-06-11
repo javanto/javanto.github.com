@@ -57,16 +57,16 @@
 
 		<!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
 		<script type="text/javascript">
-			var _gaq=[["_setAccount","UA-16108207-1"],["_trackPageview"]];
-			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-			g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-			s.parentNode.insertBefore(g,s)}(document,"script"));
+			var _gaq=[['_setAccount','UA-16108207-1'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
 		</script>
 		<script type="text/javascript">
 			Modernizr.load([
 				"/js/ba-debug-0.4.min.js",
 				{
-					load: "/js/molt-2.3.0.W.min.js",
+					load: "/js/molt-2.4.3.W.min.js",
 					complete: function() {
 						molt.discover();
 					}
