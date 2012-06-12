@@ -35,7 +35,7 @@ var oauth = OAuth({
 
 IMPORTANT NOTICE: Do not use the above method on a true web application, it'll compromise your security, as the users have direct access to your keys from the sources. For web purposes use [StackMob's HTML5 SDK](https://www.stackmob.com/platform/help/tutorials/html5_js_sdk). This is safe though in PhoneGap as the sources are not revealed to the user.
 
-So, now you've got the initial connection to the platform and you can begin using it. For instance, create an user object into your schema and then create an instance with username "foo" and password "bar" in the Test Console. We'll try to log him in using JavaScript.
+So, now you've got the initial connection to the platform and you can begin using it. For instance, in the StacMob schemas, create an user schema and then an instance with of it in the Test Console. Them we'll try to log him in using JavaScript.
 
 {% highlight js %}
 oauth.get(
