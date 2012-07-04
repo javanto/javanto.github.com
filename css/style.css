@@ -252,7 +252,6 @@ article > header > .person > section.info > .author { font-size: 1.2em; }
 article > header > .person > img.avatar, article > header > .person > section.info { display: inline-table; }
 ul.projects { list-style-type: none; padding: 0; }
 .addthis_pill_style  { width: 80px; }
-input.dsq-trackback-url { width: 100%; }
 
 /* ==|== media queries ======================================================
    PLACEHOLDER Media Queries for Responsive Design.
