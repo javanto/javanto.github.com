@@ -251,8 +251,7 @@ article > header > .person > section.info { text-align: left; vertical-align: mi
 article > header > .person > section.info > .author { font-size: 1.2em; }
 article > header > .person > img.avatar, article > header > .person > section.info { display: inline-table; }
 ul.projects { list-style-type: none; padding: 0; }
-section.social > iframe, section.social > div { display: block; margin: 2px 0; }
-section.social > iframe.twitter-share-button { min-width: 80px; }
+.addthis_pill_style  { width: 80px; }
 input.dsq-trackback-url { width: 100%; }
 
 /* ==|== media queries ======================================================
