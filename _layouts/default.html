@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		{% if page.type == 'post' %}
-		{% capture description %}{{ page.content | markdownify | strip_html | truncatewords:32 }}{% endcapture %}
+		{% capture description %}{{ page.content | markdownify | strip_html | truncate:200 }}{% endcapture %}
 		{% else %}
 		{% assign description = page.description %}
 		{% endif %}
