@@ -244,7 +244,7 @@ ul.services li { display: inline; }
 ul.posts { list-style-type: none; padding: 0; }
 div.content.post, div.content.blog { text-align: left; }
 article > header { font-size: 1.2em; }
-article > header > h2 { display: inline; margin-bottom: 0.5em; }
+article > header > h2 { margin-bottom: 0.5em; }
 article > header >.date { color: #aaa; font-size: 1em; }
 article > header >.tags { margin: 0 0 0 -0.6em; padding: 0; list-style: none; display: inline-block; }
 article > header >.tags li { font-size: 0.8em; float: left; height: 1.6em; line-height: 1.6em; position: relative; margin-left: 1.5em; padding: 0 0.6em 0 0.8em; background: #f6f48b; margin-top: 0.2em; }

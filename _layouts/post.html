@@ -13,7 +13,7 @@ layout: default
 						<meta itemprop="description" content="{{ page.content | markdownify | strip_html | truncate:200 }}">
 						<meta itemprop="url" content="http://javanto.com{{ page.url }}/">
 						<meta itemprop="wordCount" content="{{ page.content | number_of_words }}">
-						<span class="date" itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</span>
+						<div class="date" itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</div>
 						<ul class="tags">
 							{% for tag in page.tags %}
 							<li class="tag" itemprop="keywords">{{ tag }}</li>
