@@ -50,26 +50,6 @@
 		<!-- Google+ link -->
 		<link href="https://plus.google.com/100706528962511883803" rel="publisher" />
 		
-		<!-- Google PageMap -->
-		<!--
-		<PageMap>
-			<DataObject type="document">
-				<Attribute name="title">{{ page.title }}</Attribute>
-				<Attribute name="author">{{ author.display_name }}</Attribute>
-				<Attribute name="description">{{ description }}</Attribute>
-				{% if page.type == 'post' %}
-				<Attribute name="type">article</Attribute>
-				<Attribute name="post_date">{{ page.date | date_to_long_string }}</Attribute>
-				{% endif %}
-			</DataObject>
-			<DataObject type="thumbnail">
-				<Attribute name="src" value="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=120" />
-				<Attribute name="width" value="120" />
-				<Attribute name="height" value="120" />
-			</DataObject>
-		</PageMap>
-		 -->
-
 		<title>{% if page.url != '/index.html' %}{{ page.title }} - {% endif %}Javanto</title>
 
 		<link href="/css/style.css" rel="stylesheet" type="text/css">

@@ -5,25 +5,34 @@ layout: default
 		<div class="wrapper">
 			<h1><a href="/blog/">Blog</a></h1>
 
-			<div class="content post">
+			<div class="content post" itemscope itemtype="http://schema.org/BlogPosting">
 				<article class="post">
 					<header>
-						<h2>{{ page.title }}</h2>
-
+						<h2 itemprop="name">{{ page.title }}</h2>
+						<meta itemprop="inLanguage" content="en-US">
+						<meta itemprop="description" content="{{ page.content | markdownify | strip_html | truncate:200 }}">
+						<meta itemprop="url" content="http://javanto.com{{ page.url }}/">
+						<meta itemprop="wordCount" content="{{ page.content | number_of_words }}">
+						<span class="date" itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</span>
+						<ul class="tags">
+							{% for tag in page.tags %}
+							<li class="tag" itemprop="keywords">{{ tag }}</li>
+							{% endfor %}
+						</ul>
+					</header>
+					<span itemprop="articleBody">
+						{{ content }}
+					</span>
+					<footer>
 						{% assign author = site.authors[page.author] %}
-						<section class="person">
+						<section class="person" itemprop="author" itemscope itemtype="http://schema.org/Person">
 							<div class="avatar">
-								<img data-url="http://www.gravatar.com/avatar/{{ author.gravatar }}?s={240:30,480:40,768:60}" alt="Avatar" class="avatar">
+								<img data-url="http://www.gravatar.com/avatar/{{ author.gravatar }}?s={240:32,480:36,768:40}" alt="Avatar" class="avatar">
+								<meta itemprop="image" content="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=120">
 							</div>
-							<section class="info">
-								<div class="author">{{ author.display_name }}</div>
-								<div class="date">{{ page.date | date_to_long_string }}</div>
-								<ul class="tags">
-									{% for tag in page.tags %}
-									<li class="tag">{{ tag }}</li>
-									{% endfor %}
-								</ul>
-							</section>
+							<div class="authorer">
+								Authored by: <div class="author" itemprop="name">{{ author.display_name }}</div>
+							</div>
 						</section>
 						<section class="social">
 							<!-- AddThis Button BEGIN -->
@@ -42,12 +51,11 @@ layout: default
 							<!-- AddThis Button END -->
 							<div style="height: 20px; font-size: 11px; vertical-align: top;"><a href="http://feeds.feedburner.com/javanto" rel="alternate" type="application/rss+xml" style="vertical-align: middle;"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt=""></a>&nbsp;<a href="http://feeds.feedburner.com/javanto" rel="alternate" type="application/rss+xml" style="vertical-align: middle;">Subscribe in a reader</a></div>
 						</section>
-					</header>
-
-					{{ content }}
+					</footer>
 				</article>
 
 				<section class="discussion">
+					<meta itemprop="discussionUrl" content="http://javanto.com{{ page.url }}/#disqus_thread">
 					<div id="disqus_thread"></div>
 					<script type="text/javascript">
 						/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
