@@ -11,7 +11,7 @@ layout: default
 						<h2 itemprop="name">{{ page.title }}</h2>
 						<meta itemprop="inLanguage" content="en-US">
 						<meta itemprop="description" content="{{ page.content | markdownify | strip_html | truncate:200 }}">
-						<meta itemprop="url" content="http://javanto.com{{ page.url }}/">
+						<meta itemprop="url" content="http://javanto.com{{ page.url | remove:'/index.html' }}/">
 						<meta itemprop="wordCount" content="{{ page.content | number_of_words }}">
 						<div class="date" itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</div>
 						<ul class="tags">

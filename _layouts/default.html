@@ -28,11 +28,12 @@
 		<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
 		<meta http-equiv="cleartype" content="on">
 
+		{% capture url %}{{ page.url | remove:'/index.html' }}{% endcapture %}
 		{% assign author = site.authors[page.author] %}
 		<!-- Open Graph metadata -->
 		<meta property="og:title" content="{{ page.title }}">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="http://javanto.com{{ page.url }}/">
+		<meta property="og:url" content="http://javanto.com{{ url }}/">
 		<meta property="og:image" content="http://javanto.com/img/logo/logo-128.png">
 		<meta property="og:locale" content="en_US">
 		<meta property="og:site_name" content="Javanto">
@@ -43,7 +44,7 @@
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:creator" content="@{{ author.twitter }}" />
 		<meta name="twitter:site" content="@javantocom" />
-		<meta name="twitter:url" content="http://javanto.com{{ page.url }}/" />
+		<meta name="twitter:url" content="http://javanto.com{{ url }}/" />
 		<meta name="twitter:description" content="{{ description }}" />
 		<meta name="twitter:title" content="{{ page.title }}" />
 
