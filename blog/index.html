@@ -8,10 +8,15 @@ author: javanto
 		<div class="wrapper">
 			<h1><a href="/blog/">{{ page.title }}</a></h1>
 
-			<div class="content blog">
+			<div class="content blog" itemscope itemtype="http://schema.org/Blog">
+				<meta itemprop="name" content="Javanto Blog">
+				<meta itemprop="inLanguage" content="en-US">
+				<meta itemprop="description" content="{{ page.description }}">
+				<meta itemprop="url" content="http://javanto.com{{ page.url }}/">
+				{% assign post = site.posts[0] %}
+				<meta itemprop="dateModified" content="{{ post.date | date_to_xmlschema }}">
 				<article class="post">
 					<header>
-						{% assign post = site.posts[0] %}
 						<h2><a href="{{ post.url }}/">{{ post.title }}</a></h2>
 						<span class="date">{{ post.date | date_to_long_string }}</span>
 						<ul class="tags">
