@@ -232,7 +232,7 @@ div.content > article.post { margin-bottom: 0; }
 div.content > section.discussion { margin-top: 0; }
 h1 > a, h1 > a:visited, h1 > a:hover, h1 > a:focus, h1 > a:active, h2 > a, h2 > a:visited, h2 > a:hover, h2 > a:focus, h2 > a:active { text-decoration: inherit; color: inherit; }
 h1 { font-size: 1.6em; }
-h1, .author { font-family: 'Special Elite', monospace; font-weight: 400; color: #000; }
+h1, .author > .name { font-family: 'Special Elite', monospace; font-weight: 400; color: #000; }
 h2 { font-family: 'Patua One', serif; font-weight: 400; font-size: 1.4em; font-style: normal; color: #000; }
 h2 > a, h2 > a:visited, h2 > a:hover, h2 > a:focus, h2 > a:active { color: #087dbf; }
 div.person > section.person { height: 140px; text-align: center; }
@@ -251,8 +251,9 @@ article > header >.tags li { font-size: 0.8em; float: left; height: 1.6em; line-
 article > header >.tags li:before { content: ""; position: absolute; top: 0em; left: -0.75em; width: 0; height: 0; border-color: transparent #f6f48b transparent transparent; border-color: rgba(255,255,255,0) #f6f48b rgba(255,255,255,0) rgba(255,255,255,0); border-style: solid; border-width: 0.825em 0.8em 0.825em 0; }
 article > header >.tags li:after { content: ""; position: absolute; top: 0.55em; left: -0.1em; width: 0.3em; height: 0.3em; behavior: url("/css/PIE.htc"); -webkit-border-radius: 0.15em; -khtml-border-radius: 0.15em; -moz-border-radius: 0.15em; border-radius: 0.15em; background: #fff; border: 1px solid #ccc; }
 article > footer > .person { margin-bottom: 0.4em; margin-top: 0.4em; }
-article > footer > .person > .authorer > .author { font-size: 1.4em; }
-article > footer > .person > .avatar, article > footer > .person > .authorer { vertical-align: middle; display: inline-table; }
+article > footer > .person > .avatar, article > footer > .person > .author { vertical-align: middle; display: inline-table; }
+article > footer > .person > .author > .name { font-size: 1.4em; margin-bottom: -0.3em; }
+article > footer > .person > .author > .services { margin: 0; }
 ul.projects { list-style-type: none; padding: 0; }
 .addthis_pill_style  { width: 80px; }
 #disqus_thread { border-top: 2px dotted #ccc; }

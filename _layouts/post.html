@@ -27,11 +27,17 @@ layout: default
 						{% assign author = site.authors[page.author] %}
 						<section class="person" itemprop="author" itemscope itemtype="http://schema.org/Person">
 							<div class="avatar">
-								<img data-url="http://www.gravatar.com/avatar/{{ author.gravatar }}?s={240:32,480:36,768:40}" alt="Avatar" class="avatar">
+								<img data-url="http://www.gravatar.com/avatar/{{ author.gravatar }}?s={240:36,480:40,768:48}" alt="Avatar" class="avatar">
 								<meta itemprop="image" content="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=120">
 							</div>
-							<div class="authorer">
-								Author: <div class="author" itemprop="name">{{ author.display_name }}</div>
+							<div class="author">
+								Author: <div class="name" itemprop="name">{{ author.display_name }}</div>
+								<ul class="services">
+									<li><a href="http://fi.linkedin.com/in/{{ author.linkedin }}" class="service"><img src="/img/service/linkedin.png" alt="LinkedIn"></a></li>
+									<li><a href="https://plus.google.com/{{ author.google_plus }}?rel=author" class="service"><img src="/img/service/google-plus.png" alt="Google+"></a></li>
+									<li><a href="http://twitter.com/#!/{{ author.twitter }}" class="service"><img src="/img/service/twitter.png" alt="Twitter"></a></li>
+									<li><a href="http://identi.ca/{{ author.identica }}" class="service"><img src="/img/service/identica.png" alt="Identi.ca"></a></li>
+								</ul>
 							</div>
 						</section>
 						<section class="social">
