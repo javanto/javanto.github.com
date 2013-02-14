@@ -35,9 +35,9 @@ element.oninput = function(e) {
 };
 {% endhighlight %}
 
-But, as you see, you'll end up messing the content with the logic and writing loads of unnecessary JavaScript. The example above doesn't event contain logic for switching between the [various error states](http://dev.w3.org/html5/spec/constraints.html#validitystate). You see where this is going, right?
+But, as you see, you'll end up messing the content with the logic and writing loads of unnecessary JavaScript. The example above doesn't even contain the logic for switching between the [various error states](http://dev.w3.org/html5/spec/constraints.html#validitystate). You see where this is going, right?
 
-So, I wrote [civem.js](https://github.com/javanto/civem.js), it stands for **C**ustom **I**nput **V**alidation **E**rror **M**essages. And how do you use it? So simple, [download the latest version](https://github.com/javanto/civem.js/downloads), include it on your page and begin using `data-errormessage` and `data-errormessage-*` attributes on your form elements to validate. You can go check out [the demo on jsFiddle](http://jsfiddle.net/hleinone/njSbH/) or read the [documentation](https://github.com/javanto/civem.js/blob/master/README.md).
+So, I wrote [civem.js](https://github.com/javanto/civem.js), it stands for **C**ustom **I**nput **V**alidation **E**rror **M**essages. And how do you use it? Simply, [download the latest version](https://github.com/javanto/civem.js/downloads), include it on your page and begin using `data-errormessage` and `data-errormessage-*` attributes on your form elements to validate. You can go check out [the demo on jsFiddle](http://jsfiddle.net/hleinone/njSbH/) or read the [documentation](https://github.com/javanto/civem.js/blob/master/README.md).
 
 {% highlight html %}
 <script src="civem-x.x.x.min.js" type="text/javascript">
@@ -46,4 +46,4 @@ So, I wrote [civem.js](https://github.com/javanto/civem.js), it stands for **C**
 
 Easy, huh!
 
-Now, when most of you readers are busy fiddling with it, is time for some warnings. It hasn't been tested much, it's pre-pre-alpha, so it contain bugs. Also, I'm not (yet) a true JavaScript wizard, so the implementation might just suck. Anyhow, feedback is welcome, so please use the comment facility below and fork button on GitHub!
+Now, when most of you readers are busy fiddling with it, is time for some warnings. It hasn't been tested much, it's pre-pre-alpha, so it contain bugs. Also, I'm not (yet) a true JavaScript wizard, so the implementation might just suck. Anyhow, feedback is welcome, so please use the comment facility below and the fork button on GitHub!
