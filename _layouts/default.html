@@ -9,23 +9,21 @@
 		{% assign description = page.description %}
 		{% endif %}
 		<meta name="description" content="{{ description }}">
-		<meta name="author" content="Javanto">
+		<meta name="author" content="{{ site.authors['javanto'].display_name }}">
 		
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width">
 
-		<!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
-		<!-- For iPhone 4 with high-resolution Retina display: -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/logo/logo-bg-144.png">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/logo/logo-bg-114.png">
-		<!-- For first-generation iPad: -->
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/logo/logo-bg-72.png">
-		<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
 		<link rel="apple-touch-icon-precomposed" href="/img/logo/logo-bg-57.png">
-		<!-- For nokia devices: -->
 		<link rel="shortcut icon" href="/img/logo/logo-bg-57.png">
 
-		<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+        <meta name="msapplication-TileImage" content="img/logo/logo-bg-144.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+
 		<meta http-equiv="cleartype" content="on">
 
 		{% capture url %}{{ page.url | remove:'/index.html' }}{% endcapture %}
@@ -36,30 +34,31 @@
 		<meta property="og:url" content="http://javanto.com{{ url }}/">
 		<meta property="og:image" content="http://javanto.com/img/logo/logo-128.png">
 		<meta property="og:locale" content="en_US">
-		<meta property="og:site_name" content="Javanto">
+		<meta property="og:site_name" content="{{ site.authors['javanto'].display_name }}">
 		<meta property="og:description" content="{{ description }}">
 		<meta property="fb:admins" content="713421374">
 
 		<!-- Twitter metadata -->
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:creator" content="@{{ author.twitter }}" />
-		<meta name="twitter:site" content="@javantocom" />
-		<meta name="twitter:url" content="http://javanto.com{{ url }}/" />
-		<meta name="twitter:description" content="{{ description }}" />
-		<meta name="twitter:title" content="{{ page.title }}" />
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:creator" content="@{{ author.twitter }}">
+		<meta name="twitter:site" content="@{{ site.authors['javanto'].twitter }}">
+		<meta name="twitter:url" content="http://javanto.com{{ url }}/">
+		<meta name="twitter:description" content="{{ description }}">
+		<meta name="twitter:title" content="{{ page.title }}">
 
 		<!-- Google+ link -->
-		<link href="https://plus.google.com/100706528962511883803" rel="publisher" />
+		<link href="https://plus.google.complete/{{ site.authors['javanto'].google_plus }}" rel="publisher">
 		
 		<title>{% if page.url != '/index.html' %}{{ page.title }} - {% endif %}Javanto</title>
 
+		<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 		<link href="/css/style.css" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Special+Elite|Maven+Pro|Patua+One" rel="stylesheet" type="text/css">
 		<link href="/css/syntax.css" rel="stylesheet" type="text/css">
 		{% if page.url == '/blog/index.html' or page.id %}
 		<link href="http://feeds.feedburner.com/javanto" rel="alternate" title="Javanto Blog" type="application/atom+xml">
 		{% endif %}
-		<script type="text/javascript" src="/js/modernizr-2.5.3.min.js"></script>
+		<script type="text/javascript" src="/js/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
