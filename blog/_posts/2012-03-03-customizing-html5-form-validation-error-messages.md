@@ -40,10 +40,10 @@ But, as you see, you'll end up messing the content with the logic and writing lo
 So, I wrote [civem.js](https://github.com/javanto/civem.js), it stands for **C**ustom **I**nput **V**alidation **E**rror **M**essages. And how do you use it? Simply, [download the latest version](https://github.com/javanto/civem.js/downloads), include it on your page and begin using `data-errormessage` and `data-errormessage-*` attributes on your form elements to validate. You can go check out [the demo on jsFiddle](http://jsfiddle.net/hleinone/njSbH/) or read the [documentation](https://github.com/javanto/civem.js/blob/master/README.md).
 
 {% highlight html %}
-<script src="civem-x.x.x.min.js" type="text/javascript">
+<script src="civem-x.x.x.min.js" type="text/javascript"></script>
 <input type="email" data-errormessage-value-missing="It says &quot;required&quot; in the HTML!" data-errormessage-type-mismatch="Let me give you a hint: type=&quot;email&quot;." data-errormessage="This is the fallback error message." required>
 {% endhighlight %}
 
 Easy, huh!
 
-Now, when most of you readers are busy fiddling with it, is time for some warnings. It hasn't been tested much, it's pre-pre-alpha, so it contain bugs. Also, I'm not (yet) a true JavaScript wizard, so the implementation might just suck. Anyhow, feedback is welcome, so please use the comment facility below and the fork button on GitHub!
+Now, when most of you readers are busy fiddling with it, is time for some warnings. It hasn't been tested awfully lot by me, so make sure it works for your case, if it doesn't, file an issue on GitHub, I'll fix them ASAP. Also, I'm not (yet) a true JavaScript wizard, so the implementation might just suck. Anyhow, feedback is warmly welcome, so please use the comment facility below and the fork button on GitHub!
