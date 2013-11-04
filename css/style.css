@@ -102,10 +102,10 @@ nav { margin-top: 10px; }
 nav.index { margin-top: 0; padding-top: 10px; }
 nav ul li, nav ol li { display: inline-table; }
 nav ul li a, nav ol li a { background-color: #ccc; display: block; width: 14px; height: 14px; behavior: url("/css/PIE.htc"); -webkit-border-radius: 7px; -khtml-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; background-repeat: no-repeat; background-position: center center; }
-nav ul li a.home { background-image: url("../img/control/home-8.png"); }
-nav ul li a.blog { background-image: url("../img/control/blog-8.png"); }
-nav ul li a.projects { background-image: url("../img/control/projects-8.png"); }
-nav ul li a.other { background-image: url("../img/control/other-8.png"); }
+nav ul li a.home { background-image: url("../img/control/sprite-8.png"); background-position: -7px -7px; }
+nav ul li a.blog { background-image: url("../img/control/sprite-8.png"); background-position: -7px -35px; }
+nav ul li a.projects { background-image: url("../img/control/sprite-8.png"); background-position: -7px -63px; }
+nav ul li a.other { background-image: url("../img/control/sprite-8.png"); background-position: -6.5px -88px; }
 nav ul li a.selected, nav ol li a.selected { background-color: #000; }
 div.content { border: 1px solid #ccc; background: rgba(255,255,255,0.8); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ccffffff', endColorstr='#ccffffff'); clear: both; position: relative; max-width: 414px; text-align: left; margin: 0 10px 10px 10px; }
 div.content.person { text-align: center; }
@@ -259,10 +259,10 @@ ul.projects { list-style-type: none; padding: 0; }
   nav { margin-top: 15px; }
   nav.index { padding-top: 15px; }
   nav ul li a, nav ol li a { width: 28px; height: 28px; behavior: url("/css/PIE.htc"); -webkit-border-radius: 14px; -khtml-border-radius: 14px; -moz-border-radius: 14px; border-radius: 14px; }
-  nav ul li a.home { background-image: url("../img/control/home-16.png"); }
-  nav ul li a.blog { background-image: url("../img/control/blog-16.png"); }
-  nav ul li a.projects { background-image: url("../img/control/projects-16.png"); }
-  nav ul li a.other { background-image: url("../img/control/other-16.png"); }
+  nav ul li a.home { background-image: url("../img/control/sprite-16.png"); background-position: -4px -4px; }
+  nav ul li a.blog { background-image: url("../img/control/sprite-16.png"); background-position: -4px -40px; }
+  nav ul li a.projects { background-image: url("../img/control/sprite-16.png"); background-position: -4px -76px; }
+  nav ul li a.other { background-image: url("../img/control/sprite-16.png"); background-position: -3.5px -108px; }
   div.content > section, div.content > article { margin: 30px 10px; }
   div.person > section.person { height: 100px; text-align: center; }
   div.avatar, section.info { vertical-align: middle; display: inline-table; }
@@ -285,10 +285,10 @@ ul.projects { list-style-type: none; padding: 0; }
   nav { margin-top: 25px; }
   nav.index { padding-top: 25px; }
   nav ul li a, nav ol li a { width: 56px; height: 56px; behavior: url("/css/PIE.htc"); -webkit-border-radius: 28px; -khtml-border-radius: 28px; -moz-border-radius: 28px; border-radius: 28px; }
-  nav ul li a.home { background-image: url("../img/control/home-32.png"); }
-  nav ul li a.blog { background-image: url("../img/control/blog-32.png"); }
-  nav ul li a.projects { background-image: url("../img/control/projects-32.png"); }
-  nav ul li a.other { background-image: url("../img/control/other-32.png"); }
+  nav ul li a.home { background-image: url("../img/control/sprite-32.png"); background-position: 0px 0px; }
+  nav ul li a.blog { background-image: url("../img/control/sprite-32.png"); background-position: 0px -56px; }
+  nav ul li a.projects { background-image: url("../img/control/sprite-32.png"); background-position: 0px -112px; }
+  nav ul li a.other { background-image: url("../img/control/sprite-32.png"); background-position: 0px -168px; }
   div.content > section, div.content > article { margin: 40px 20px; }
   div.person > section.person { height: 120px; }
   h2 { font-size: 2em; }
