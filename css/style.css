@@ -100,6 +100,7 @@ div#floater { position: relative; float: left; height: 50%; margin-bottom: -110p
 div.wrapper { text-align: center; width: 100%; }
 nav { margin-top: 10px; }
 nav.index { margin-top: 0; padding-top: 10px; }
+nav ul { padding: 0; }
 nav ul li, nav ol li { display: inline-table; }
 nav ul li a, nav ol li a { background-color: #ccc; display: block; width: 14px; height: 14px; behavior: url("/css/PIE.htc"); -webkit-border-radius: 7px; -khtml-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; background-repeat: no-repeat; background-position: center center; }
 nav ul li a.home { background-image: url("../img/control/sprite-8.png"); background-position: -7px -7px; }
