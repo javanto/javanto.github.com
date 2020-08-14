@@ -46,31 +46,15 @@
 		<meta name="twitter:description" content="{{ description }}">
 		<meta name="twitter:title" content="{{ page.title }}">
 
-		<!-- Google+ link -->
-		<link href="https://plus.google.complete/{{ site.authors['javanto'].google_plus }}" rel="publisher">
-		
 		<title>{% if page.url != '/index.html' %}{{ page.title }} - {% endif %}Javanto</title>
 
 		<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 		<link href="/css/style.css" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Special+Elite|Maven+Pro|Patua+One" rel="stylesheet" type="text/css">
 		<link href="/css/syntax.css" rel="stylesheet" type="text/css">
-		{% if page.url == '/blog/index.html' or page.id %}
-		<link href="http://feeds.feedburner.com/javanto" rel="alternate" title="Javanto Blog" type="application/atom+xml">
-		{% endif %}
 		<script type="text/javascript" src="/js/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
-		<div class="wrapper">
-			<nav{% if page.url == '/index.html' %} class="index"{% endif %}>
-				<ul>
-					<li><a href="/" class="home{% if page.url == '/index.html' %} selected{% endif %}"></a></li>
-					<li><a href="/blog/" class="blog{% if page.url == '/blog/index.html' or page.id %} selected{% endif %}"></a></li>
-					<li><a href="/projects/" class="projects{% if page.url == '/projects/index.html' %} selected{% endif %}"></a></li>
-					<li><a href="/other/" class="other{% if page.url == '/other/index.html' %} selected{% endif %}"></a></li>
-				</ul>
-			</nav>
-		</div>
 {{ content }}
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

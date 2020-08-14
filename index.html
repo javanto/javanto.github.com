@@ -10,23 +10,12 @@ author: javanto
 			<div class="content person">
 				<section class="person">
 					{% assign author = site.authors['hleinone'] %}
-					<div class="avatar">
-						<img data-url="http://www.gravatar.com/avatar/{{ author.gravatar }}?s={240:80,480:95,768:120}" alt="Avatar" class="avatar">
-					</div>
 					<section class="info">
 						<h1>{{ author.display_name }}</h1>
-						<dfn>A Software Developer</dfn>
+						<dfn>Developer</dfn>
 						<ul class="services">
-							<li><a href="http://fi.linkedin.com/in/{{ author.linkedin }}" class="service"><img src="img/service/linkedin.png" alt="LinkedIn"></a></li>
-							<li><a href="https://plus.google.com/{{ author.google_plus }}" class="service"><img src="img/service/google-plus.png" alt="Google+"></a></li>
-							<li><a href="http://twitter.com/#!/{{ author.twitter }}" class="service"><img src="img/service/twitter.png" alt="Twitter"></a></li>
-							<li><a href="http://identi.ca/{{ author.identica }}" class="service"><img src="img/service/identica.png" alt="Identi.ca"></a></li>
-							<li><a href="http://about.me/{{ author.aboutme }}" class="service"><img src="img/service/aboutme.png" alt="About.me"></a></li>
-							<li><a href="http://careers.stackoverflow.com/{{ author.stackoverflow_careers }}" class="service"><img src="img/service/stack-overflow-careers.png" alt="Stack Overflow Careers"></a></li>
 							<li><a href="http://stackoverflow.com/users/{{ author.stackoverflow.id }}/{{ author.stackoverflow.name }}" class="service"><img src="img/service/stack-overflow.png" alt="Stack Overflow"></a></li>
 							<li><a href="https://github.com/{{ author.github }}" class="service"><img src="img/service/github.png" alt="GitHub"></a></li>
-							<li><a href="http://code.google.com/u/{{ author.google_code }}/" class="service"><img src="img/service/google-code.png" alt="Google Code"></a></li>
-							<li><a href="http://bitbucket.org/{{ author.bitbucket }}/" class="service"><img src="img/service/bitbucket.png" alt="Bitbucket"></a></li>
 						</ul>
 					</section>
 				</section>
